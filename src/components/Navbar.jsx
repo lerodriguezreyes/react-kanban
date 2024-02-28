@@ -5,7 +5,7 @@ function Navbar() {
         <img
           width="100"
           height="100"
-          src="https://github.com/lerodriguezreyes/react-kanban/blob/master/public/logo.png?raw=true"  alt="rocketship zooming in space"
+          src="https://github.com/lerodriguezreyes/react-kanban/blob/main/public/logo.png?raw=true"  alt="rocketship zooming in space"
         />
       </div>
       <div id="navTextContainer">
