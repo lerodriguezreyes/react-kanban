@@ -2,17 +2,29 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 a {
   color: #555;
 }
-.Navbar {
-color: #555;
+#Navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between ;
 }
-.footer {
-  color: #555;
+
+#navTextContainer {
+  text-align: center;
+}
+#navTextContainer h1 {
+  margin-bottom: 0; /* Remove margin bottom */
+}
+#navTextContainer p {
+  margin-top: 0; /* Remove margin top */
+}
+
+#footer {
   font-family: helvetica, arial, sans-serif;
   text-align: center;
   margin: 0;
