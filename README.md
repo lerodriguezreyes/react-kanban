@@ -22,6 +22,28 @@ The React application should have the following features:
 * Extra: Display a toast with feedback whenever a task is successfully created, updated, or deleted.
 * Extra: The user should be able to easily move tasks between columns by dragging and dropping them.
 
+### Iteration 1 tasks
+1. Set up a GitHub repository for the project:
+2. Create a new React application locally in the folder of the cloned repository.
+3. Remember to **commit your changes often and push them to the GitHub repo** after creating the new React app.
+4. Create a **Home Page** in your React app that has the following features:
+    - The **Navbar** component that displays the app’s name and logo.
+    - The **Footer** component with the link to the GitHub repository of the project.
+    - The **Sidebar** component with the links to the Home and About page.
+    - Add basic styling to your app.
+
+### Iteration 2 tasks
+By the end of the day, as a minimum, you should:
+
+1. Render your JSON data as a list.
+2. Conditionally render content in the list items. Here is how you can do it:
+    -  Include a condition to conditionally render content on each item in the list. For example, if your list items have a property isCompleted, show ✔️ if it is true and ❌ if it is false.
+    - If objects in your JSON dataset don’t contain any boolean property, make a conditional check that results in true or false. For example, you can check if a value is greater or less than a specified number.
+3. Include a delete button on each list item that allows the user to delete the item from the list.
+4. Make the list a separate component by extracting the code for better code organization (for example, ```<List />```).
+5. Make the list item a separate component and use the new component to render the list items (for example, ```<ListItem />``` or ```<ItemCard />```).
+
+
 #### Credits
 
 * All space images are from NASA and were taken from: https://science.nasa.gov/mission/webb/multimedia/images/
@@ -30,8 +52,9 @@ The React application should have the following features:
 * All quotes were taken from https://www.brainyquote.com and https://spacequotations.com/quotes-about-space/
 
 ##### Questions to ask Daniel or Dustin
-1. Why does the html get formated in a different way?
-2. Which CSS file can I change - > app or index?
+- Date export function is not working, but in replit it does. Need to fix it.
+- Am I missing iteration 4? 
+- Am I missing iteration 5?
 
 ##### Ideas that I would like to implement
 1. Side Bar style: https://reactjsexample.com/react-burger-menu-an-off-canvas-sidebar-react-component-with-a-collection-of-effects/
