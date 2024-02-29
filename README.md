@@ -51,10 +51,9 @@ By the end of the day, as a minimum, you should:
 * Logo was taken from https://stock.adobe.com/search?k=%22space+logo%22&asset_id=563350020
 * All quotes were taken from https://www.brainyquote.com and https://spacequotations.com/quotes-about-space/
 
-##### Questions to ask Daniel or Dustin
-- Date export function is not working, but in replit it does. Need to fix it.
-- Am I missing iteration 4? 
-- Am I missing iteration 5?
+##### Pending tasks
+- day 2  iteration 4 
+- day 2  iteration 5
 
 ##### Ideas that I would like to implement
 1. Side Bar style: https://reactjsexample.com/react-burger-menu-an-off-canvas-sidebar-react-component-with-a-collection-of-effects/
