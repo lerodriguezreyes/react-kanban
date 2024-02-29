@@ -1,6 +1,6 @@
 import KanbanTaskData from "../assets/KanbanData.json";
 import { useState } from "react";
-import { CurrentDate } from "../services/CurrentDate";
+import { currentDate, milisecondComparison } from "../services/DateUtilities";
 
 function TaskList() {
   const [task, setTask] = useState(KanbanTaskData);
@@ -22,8 +22,7 @@ function TaskList() {
         <p> priority: {taskElement.priority}</p>
         <p> createdDate: {taskElement.createdDate}</p>
         <p> dueDate: {taskElement.dueDate}</p>
-
-        {taskElement.dueDate < CurrentDate ? (
+        {milisecondComparison(taskElement.dueDate) ? (
           <p>
             {" "}
             On Time<span>✔️</span>{" "}
