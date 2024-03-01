@@ -33,8 +33,6 @@ The React application should have the following features:
     - Add basic styling to your app.
 
 ### Iteration 2 tasks
-By the end of the day, as a minimum, you should:
-
 1. Render your JSON data as a list.
 2. Conditionally render content in the list items. Here is how you can do it:
     -  Include a condition to conditionally render content on each item in the list. For example, if your list items have a property isCompleted, show ✔️ if it is true and ❌ if it is false.
@@ -42,6 +40,17 @@ By the end of the day, as a minimum, you should:
 3. Include a delete button on each list item that allows the user to delete the item from the list.
 4. Make the list a separate component by extracting the code for better code organization (for example, ```<List />```).
 5. Make the list item a separate component and use the new component to render the list items (for example, ```<ListItem />``` or ```<ItemCard />```).
+
+### Iteration 3 tasks
+1. Install and set up react-router in your React app.
+2. Create the following page components and the routes to render them in the app:
+    - Dashboard Page - A page that the user sees first when they open the app. It should show the items list that you created previously.
+    - Item Details Page - A page that displays all the details of an item selected from the items list.
+    - About Page - A page showing the project description and information about the team members (students) working on the project, including links to your GitHub and LinkedIn profiles.
+    - Not Found Page - A page that renders whenever a user navigates to a URL route that doesn’t exist in the app.
+3. The Navbar, Footer, and Sidebar components should be displayed on all the pages.
+
+Research Tasks
 
 
 #### Credits
@@ -52,8 +61,9 @@ By the end of the day, as a minimum, you should:
 * All quotes were taken from https://www.brainyquote.com and https://spacequotations.com/quotes-about-space/
 
 ##### Pending tasks
-- day 2  iteration 4 
-- day 2  iteration 5
+- Nav bar using selected style
+- style the cards
+- style the different pages
 
 ##### Ideas that I would like to implement
 1. Side Bar style: https://reactjsexample.com/react-burger-menu-an-off-canvas-sidebar-react-component-with-a-collection-of-effects/
