@@ -1,6 +1,5 @@
 import KanbanTaskData from "../assets/KanbanData.json";
 import { useState } from "react";
-import TaskCard from "./TaskCard";
 import ReducedTaskCard from "./ReducedTaskCard";
 
 function TaskList() {
