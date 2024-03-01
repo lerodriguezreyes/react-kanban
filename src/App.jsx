@@ -4,11 +4,24 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import TaskList from "./components/TaskList";
 
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+import SpaceGallery from "./pages/SpaceGallery";
+
 function App() {
 
   return (
     <>
       <Navbar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/dashboard/:taskId" element={<TaskDetails TaskDetails={tasks} />} */}
+        <Route path="/gallery" element={<SpaceGallery />} />
+        <Route path="*" element={<NotFound />} /> 
+      </Routes>
       <Sidebar />
       <section className="pendingTasks">
         <TaskList />
