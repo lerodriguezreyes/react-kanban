@@ -5,8 +5,8 @@ function Dashboard() {
   return (
     <>
     <TaskList/>
-    <button> Send out the lander! </button>
-    <button> New orbiting celestial body </button>
+    <button> Map the Cosmos! </button>
+    <button> Discover new celestial body </button>
     </>
   )
 }
