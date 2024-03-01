@@ -1,8 +1,13 @@
+import TaskList from "../components/TaskList"
 
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <>
+    <TaskList/>
+    <button> Send out the lander! </button>
+    <button> New orbiting celestial body </button>
+    </>
   )
 }
 
