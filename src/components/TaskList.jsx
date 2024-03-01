@@ -1,6 +1,7 @@
 import KanbanTaskData from "../assets/KanbanData.json";
 import { useState } from "react";
 import TaskCard from "./TaskCard";
+import ReducedTaskCard from "./ReducedTaskCard";
 
 function TaskList() {
   const [tasks, setTasks] = useState(KanbanTaskData);
@@ -15,9 +16,9 @@ function TaskList() {
 
   return (
     <div>
-      <h2> Task List </h2>
+      <h2> Orbiting tasks </h2>
       {tasks.map((task) => {
-        return <TaskCard key={task.id} task={task} deleteTask = {deleteTask}/>;
+        return <ReducedTaskCard key={task.id} task={task} deleteTask = {deleteTask}/>;
       })}
     </div>
   );
