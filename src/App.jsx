@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import SpaceGallery from "./pages/SpaceGallery";
+import MissionBoardPage from "./pages/MissionBoardPage";
 
 function App() {
 
@@ -18,15 +19,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/dashboard/:taskId" element={<TaskDetails TaskDetails={tasks} />} */}
-        <Route path="/gallery" element={<SpaceGallery />} />
+        <Route path="/missionboard" element={<MissionBoardPage/>} />
+        {/* <Route path="/gallery" element={<SpaceGallery />} /> */}
+        
         <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Sidebar />
-      <section className="pendingTasks">
-        <TaskList />
-      </section>
-      <section className="KanbanBoard"></section>
       <Footer />
     </>
   );
