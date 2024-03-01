@@ -19,8 +19,10 @@ function ReducedTaskCard({ task, deleteTask }) {
 
       <button onClick={() => deleteTask(task.id)} className="deletebutton">
         {" "}
-        Delete task{" "}
+        Blast it!{" "}
       </button>
+
+      <button> Explore it! </button>
     </div>
   );
 }
