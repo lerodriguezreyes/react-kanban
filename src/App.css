@@ -54,10 +54,45 @@ ul {
   text-align: center;
 }
 #navTextContainer h1 {
-  margin-bottom: 0; /* Remove margin bottom */
+  margin-bottom: 0; 
 }
 #navTextContainer p {
-  margin-top: 0; /* Remove margin top */
+  margin-top: 0; 
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 75%;
+  height: 75%;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
 }
 
 #footer {

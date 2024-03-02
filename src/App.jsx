@@ -24,7 +24,6 @@ function App() {
         {/* <Route path="/:taskId" element={<TaskDetails />} /> */}
         <Route path="*" element={<NotFound />} /> 
       </Routes>
-      <Sidebar />
       <Footer />
     </>
   );
