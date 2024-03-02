@@ -31,7 +31,7 @@ The React application should have the following features:
 * Error page image taken from: https://www.irishtimes.com/resizer/R1ncS8w_lc193kscBzlcYsjdEcU=/1600x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/5W5SBE4OVBYZSUTJDYQ2HYWIDA.jpg
 * Astronaut recruiting image taken from: https://img.freepik.com/premium-vector/astronaut-recruiting-poster_77221-136.jpg 
 
-### Iteration 1 tasks
+### Iteration 1 tasks  ✔️
 1. Set up a GitHub repository for the project. ✔️
 2. Create a new React application locally in the folder of the cloned repository. ✔️
 3. Remember to **commit your changes often and push them to the GitHub repo** after creating the new React app. ✔️
@@ -41,7 +41,7 @@ The React application should have the following features:
     - The **Sidebar** component with the links to the Home and About page. ✔️
     - Add basic styling to your app. ✔️
 
-### Iteration 2 tasks
+### Iteration 2 tasks  ✔️
 1. Render your JSON data as a list. ✔️
 2. Conditionally render content in the list items.
     -  Condition to conditionally render content on each item in the list.✔️
@@ -70,13 +70,13 @@ The React application should have the following features:
 
 ### Iteration 6 tasks:
 1. Finish implementing any remaining features in your app.
-2. Finish styling changes in App.
+2. Finish fleshing out individual page content.
+3. Finish styling changes in App.
 
 
 ### Pending tasks
 - FIGURE OUT ITEMS DETAILS PAGE and its url parameter browsing.
 - Add buttons functionality to dashboard.
-- create forms and add functionality to dashboard page.
 - create update form and add functionality to item details page.
 - integrate drag and drop functionality.
 - integrate toasts display whenever a task is successfully created, updated, or deleted.
