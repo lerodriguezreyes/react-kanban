@@ -80,7 +80,6 @@ The React application should have the following features:
 - create update form and add functionality to item details page.
 - integrate drag and drop functionality.
 - integrate toasts display whenever a task is successfully created, updated, or deleted.
-- Style the Nav bar using the restaurant menu like style theme.
 - style the reduced cards into celestial bodies.
 - style the different pages.
 
