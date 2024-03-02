@@ -4,11 +4,14 @@ import ReducedTaskCard from "./ReducedTaskCard";
 import AddTask from "./AddTask";
 
 function TaskList() {
+  
   const [tasks, setTasks] = useState(KanbanTaskData);
+  
   const addNewTask = (newTask) => {
     let newTasks = [newTask, ...tasks]
     setTasks(newTasks)
-  } 
+  }
+
   const deleteTask = (taskId) => {
     const filteredTasks = tasks.filter((task) => {
       return task.id !== taskId;
@@ -20,10 +23,12 @@ function TaskList() {
   return (
     <div>
       <h2> Orbiting tasks </h2>
-      <AddTask addNewTask = {addNewTask} />
       {tasks.map((task) => {
         return <ReducedTaskCard key={task.id} task={task} deleteTask = {deleteTask}/>;
       })}
+
+      <AddTask addNewTask = {addNewTask} />
+
     </div>
   );
 }
