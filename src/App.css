@@ -29,6 +29,20 @@ ul {
   font-style: normal;
 }
 
+/* Footer styling */
+#footer {
+  font-family: "Farsan", cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+}
+
+#footer h4 {
+  font-size: 14pt;
+}
+
+/* Navbar Styling */
 #Navbar {
   display: flex;
   flex-wrap: nowrap;
@@ -60,20 +74,19 @@ ul {
   margin-top: 0; 
 }
 
-/* Position and sizing of burger button */
+
+/* SideBar Styling */
 .bm-burger-button {
   position: relative;
   width: 75%;
   height: 75%;
 }
 
-/* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 30px;
   width: 30px;
 }
 
-/* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
 }
@@ -83,29 +96,17 @@ ul {
   height: 100%;
 }
 
-/* General sidebar styles */
 .bm-menu {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
-/* Individual item */
 .bm-item {
   display: inline-block;
 }
 
-#footer {
-  font-family: "Farsan", cursive;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-size: 14pt;
-}
-
-#footer h4 {
-  font-size: 14pt;
-}
+/*  Task form styling */
 
 .AddTask {
   border: 1px solid grey;
