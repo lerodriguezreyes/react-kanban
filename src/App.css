@@ -5,7 +5,7 @@
 }
 
 a {
-  color: #000000;
+  color: white;
 }
 
 ul {
@@ -34,21 +34,20 @@ ul {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between ;
   background-color: #000000;
   color: white;
 }
 
 #navTextContainer h1{
   font-family: "Anta", sans-serif;
-  font-weight: 400;
+  font-weight: 40;
   font-style: normal;
-  font-size: 32pt;
+  font-size: 28pt;
 }
 
 #navTextContainer h2{
   font-family: "Anta", cursive;
-  font-size: 18pt;
+  font-size: 15pt;
 }
 
 #navTextContainer {
@@ -59,14 +58,15 @@ ul {
 }
 #navTextContainer p {
   margin-top: 0; 
+
 }
 
 
 /* SideBar Styling */
 .bm-burger-button {
   position: relative;
-  width: 75%;
-  height: 75%;
+  width: 55%;
+  height: 55%;
 }
 
 .bm-cross-button {
@@ -94,39 +94,87 @@ ul {
   color: white;
 }
 
+/* Kanban Board styling */
+.KanbanBoard{
+  background-image: url(https://github.com/lerodriguezreyes/react-kanban/blob/main/images/kanbanback.jpg?raw=true);
+  background-size: cover;
+  width: 100%;
+  }
+
+.kContainer {
+  width: 100%;
+}
+
+.kContainer > h1{
+  text-align: center;
+  font-family: "Anta", cursive;
+  font-size: 20pt;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px grey;
+  margin-top: 0;
+}
+
+.dragDropContainer{
+display: flex;
+height: 100%;
+}
+
+
+.kHeaders {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kHeaders >h3{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px grey;
+  font-family: "Anta", cursive;
+  font-size: 15pt;
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+.kColumns{
+  background-color: grey;
+  height: 400px;
+  width: 100%;
+  margin: 5px;
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px grey;
+}
+
 /* Boardtask styling */
 .ReducedTaskCard {
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 10px;
 width: 250px;
 height: 250px;
 border-radius: 50%;
-box-shadow: 0 0 10px rgba(128, 128,128,0.135);
-margin: 8px;
 border: solid;
 border-color: black;
 border-width: 2px;
 background-image: url(https://github.com/lerodriguezreyes/react-kanban/blob/main/images/texture1.jpg?raw=true);
 background-size: cover;
-
-
-
 }
-
 
 /* Footer styling */
 #footer {
   font-family: "Farsan", cursive;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 0;
   font-size: 14pt;
+  background-color: #000000;
 }
 
 #footer h4 {
   font-size: 14pt;
+  margin-top: 0;
 }
 
 /*  Task form styling */

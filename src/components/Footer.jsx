@@ -4,7 +4,6 @@ function Footer() {
 
     return (
       <div id="footer">
-        <hr></hr>
         <h4>Enjoy a byte of intergalactic food for tought: <RandomQuote /> </h4>
         <p>Made with love by Luis Emmanuel</p>
         <p>

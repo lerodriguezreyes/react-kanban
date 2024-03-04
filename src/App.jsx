@@ -6,7 +6,6 @@ import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import SpaceGallery from "./pages/SpaceGallery";
-import MissionBoardPage from "./pages/MissionBoardPage";
 import TaskDetails from "./pages/TaskDetails";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
-        <Route path="/missionboard" element={<MissionBoardPage/>} />
         <Route path="/gallery" element={<SpaceGallery />} />
         {/* <Route path="/:taskId" element={<TaskDetails />} /> */}
         <Route path="*" element={<NotFound />} /> 
