@@ -195,6 +195,17 @@ position: relative;
 left: 32%;
 }
 
+/* Lost page styling */
+#lostHeader, #lostMessege{
+  text-align: center;
+  font-family: 'anta';
+}
+
+#lostPic{
+  width: 100%;
+}
+
+
 /*  Task form styling */
 
 .AddTask {
