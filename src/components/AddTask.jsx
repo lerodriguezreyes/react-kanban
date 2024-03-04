@@ -76,7 +76,7 @@ setDueDate('')
             />
             
             <label>Description: </label>
-            <input 
+            <textarea 
                 type= 'text'
                 name= 'description'
                 value={description}
@@ -126,7 +126,7 @@ setDueDate('')
                 value={dueDate}
                 onChange={handleDueDateInput}
             />
-            
+            <br></br>
             {console.log("after rendering",
             title,description,assignee, createdDate,
              status, priority, dueDate)}
