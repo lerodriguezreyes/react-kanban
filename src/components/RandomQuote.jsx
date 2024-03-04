@@ -1,8 +1,9 @@
 function RandomQuote() {
   function randomQuote() {
     const spaceQuotesArray = [
+      `To Infinity And Beyond! ~ Buzz Lightyear`,
       `The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever. ~ Konstantin Tsiolkovsky`,
-      "For the wise man looks into space and he knows there is no limited dimensions. ~ Zhuangzi",
+      `For the wise man looks into space and he knows there is no limited dimensions. ~ Zhuangzi`,
       `Houston, we've had a problem. ~ Jim Lovell`,
       `If the Earth gets hit by an asteroid, it's game over. It's control-alt-delete for civilization. ~ Bill Nye`,
       `You cannot look up at the night sky on the Planet Earth and not wonder what it's like to be up there amongst the stars... ~ Tom Hanks`,
@@ -13,8 +14,8 @@ function RandomQuote() {
       `Perhaps, as some wit remarked, the best proof that there is Intelligent Life in Outer Space is the fact it hasn't come here. Well, it can't hide forever - one day we will overhear it. ~ Arthur C. Clarke`,
       `Houston, Tranquillity Base here. The Eagle has landed. ~ Neil Armstrong`,
       `If you're going to go to the moon, you don't shoot the rocket right at the moon. You have to go at it obliquely. ~ Drew Houston`,
-      `“The universe is a pretty big place. If it’s just us, seems like an awful waste of space. ~ Carl Sagan`,
-      `“From out there on the Moon, international politics look so petty. You want to grab a politician by the scruff of the neck and drag him a quarter of a million miles out and say, "Look at that, you son of a redacted to keep this site family friendly." ~ Edgar Mitchel`,
+      `The universe is a pretty big place. If it’s just us, seems like an awful waste of space. ~ Carl Sagan`,
+      `From out there on the Moon, international politics look so petty. You want to grab a politician by the scruff of the neck and drag him a quarter of a million miles out and say, "Look at that, you son of a redacted to keep this site family friendly. ~ Edgar Mitchel`,
     ];
     let randomIndex = Math.floor(Math.random() * spaceQuotesArray.length);
     return spaceQuotesArray[randomIndex];
