@@ -22,7 +22,6 @@ function TaskList() {
 
   return (
     <div>
-      <h2> Orbiting tasks </h2>
       {tasks.map((task,index) => {
         return <ReducedTaskCard key={task.id} task={task} index={index} deleteTask = {deleteTask}/>;
       })}
