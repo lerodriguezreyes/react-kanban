@@ -1,12 +1,11 @@
+import Sidebar from "./Sidebar";
+
 function Navbar() {
   return (
     <div id="Navbar">
       <div id="navImageContainer">
-        <img
-          width="100"
-          height="100"
-          src="https://github.com/lerodriguezreyes/react-kanban/blob/master/public/logo.png?raw=true"  alt="rocketship zooming in space"
-        />
+      <Sidebar/>
+        
       </div>
       <div id="navTextContainer">
         {" "}
@@ -15,7 +14,7 @@ function Navbar() {
           Unlock the final frontier while seamlessly journeying through tasks
         </h2>{" "}
       </div>
-<div></div>
+      <div></div>
     </div>
   );
 }

@@ -8,6 +8,10 @@ a {
   color: #000000;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .anta-regular {
   font-family: "Anta", sans-serif;
   font-weight: 400;
@@ -25,11 +29,27 @@ a {
   font-style: normal;
 }
 
+/* Footer styling */
+#footer {
+  font-family: "Farsan", cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+}
+
+#footer h4 {
+  font-size: 14pt;
+}
+
+/* Navbar Styling */
 #Navbar {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between ;
+  background-color: #000000;
+  color: white;
 }
 
 #navTextContainer h1{
@@ -48,20 +68,74 @@ a {
   text-align: center;
 }
 #navTextContainer h1 {
-  margin-bottom: 0; /* Remove margin bottom */
+  margin-bottom: 0; 
 }
 #navTextContainer p {
-  margin-top: 0; /* Remove margin top */
+  margin-top: 0; 
 }
 
-#footer {
-  font-family: "Farsan", cursive;
+
+/* SideBar Styling */
+.bm-burger-button {
+  position: relative;
+  width: 75%;
+  height: 75%;
+}
+
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+/*  Task form styling */
+
+.AddTask {
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  font-size: 14pt;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-#footer h4 {
-  font-size: 14pt;
+.AddTask {
+  background: #fffee7;
+}
+
+.AddTask label {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.AddTask input {
+  padding: 10px;
+  display: inline-block;
+  margin: 2px 0 10px;
+}
+
+.AddTask input[type='checkbox'] {
+  height: 30px;
+  display: block;
+  margin: 0 auto;
 }
