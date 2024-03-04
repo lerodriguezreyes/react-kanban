@@ -29,19 +29,6 @@ ul {
   font-style: normal;
 }
 
-/* Footer styling */
-#footer {
-  font-family: "Farsan", cursive;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-size: 14pt;
-}
-
-#footer h4 {
-  font-size: 14pt;
-}
-
 /* Navbar Styling */
 #Navbar {
   display: flex;
@@ -97,13 +84,49 @@ ul {
 }
 
 .bm-menu {
-  background: #373a47;
+  background: #000000;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 .bm-item {
   display: inline-block;
+  color: white;
+}
+
+/* Boardtask styling */
+.ReducedTaskCard {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+width: 250px;
+height: 250px;
+border-radius: 50%;
+box-shadow: 0 0 10px rgba(128, 128,128,0.135);
+margin: 8px;
+border: solid;
+border-color: black;
+border-width: 2px;
+background-image: url(https://github.com/lerodriguezreyes/react-kanban/blob/main/images/texture1.jpg?raw=true);
+background-size: cover;
+
+
+
+}
+
+
+/* Footer styling */
+#footer {
+  font-family: "Farsan", cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+}
+
+#footer h4 {
+  font-size: 14pt;
 }
 
 /*  Task form styling */
@@ -115,7 +138,7 @@ ul {
   text-align: center;
   margin-bottom: 20px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .AddTask {
@@ -128,14 +151,8 @@ ul {
   margin: 0 auto;
 }
 
-.AddTask input {
+.AddTask input,textarea,select {
   padding: 10px;
   display: inline-block;
   margin: 2px 0 10px;
-}
-
-.AddTask input[type='checkbox'] {
-  height: 30px;
-  display: block;
-  margin: 0 auto;
 }
