@@ -2,7 +2,7 @@ import { milisecondComparison } from "../services/DateUtilities";
 
 function ReducedTaskCard({ task, deleteTask }) {
   return (
-    <div key={task.id} className="ReducedTaskList">
+    <div key={task.id} className="ReducedTaskCard">
       <h4>Task: {task.title}</h4>
       <p> Due Date: {task.dueDate}</p>
       {milisecondComparison(task.dueDate) ? (
@@ -13,7 +13,7 @@ function ReducedTaskCard({ task, deleteTask }) {
       ) : (
         <p>
           {" "}
-          <strong>Status: </strong><span>⏰</span>Prioritize this task!<span>⏰</span>
+          <strong>Status: </strong><span>⏰</span>Prioritize task!<span>⏰</span>
         </p>
       )}
 
