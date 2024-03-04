@@ -177,6 +177,24 @@ background-size: cover;
   margin-top: 0;
 }
 
+/*  About Page */
+#aboutPage > h1{
+text-align: center;
+font-family: 'Anta';
+}
+
+#aboutPage p {
+  text-align: justify;
+  font-family: "Farsan";
+  color: black;
+  font-size: large;
+}
+
+#flowNaut{
+position: relative;
+left: 32%;
+}
+
 /*  Task form styling */
 
 .AddTask {

@@ -5,7 +5,11 @@ function Footer() {
     return (
       <div id="footer">
         <h4>Enjoy a byte of intergalactic food for tought: <RandomQuote /> </h4>
-        <p>Made with love by Luis Emmanuel</p>
+        <p>Made with {<img
+          width="20"
+          height="20"
+          src="https://github.com/lerodriguezreyes/react-kanban/blob/main/images/love.png?raw=true" alt="filled-like"
+        />}by Luis Emmanuel</p>
         <p>
           {" "}
           <a href="https://github.com/lerodriguezreyes/m1p-echoes.git">
