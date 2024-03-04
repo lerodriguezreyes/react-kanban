@@ -3,10 +3,7 @@ import Sidebar from "./Sidebar";
 function Navbar() {
   return (
     <div id="Navbar">
-      <div id="navImageContainer">
       <Sidebar/>
-        
-      </div>
       <div id="navTextContainer">
         {" "}
         <h1>CosmicFlow</h1>
@@ -14,7 +11,6 @@ function Navbar() {
           Unlock the final frontier while seamlessly journeying through tasks
         </h2>{" "}
       </div>
-      <div></div>
     </div>
   );
 }
