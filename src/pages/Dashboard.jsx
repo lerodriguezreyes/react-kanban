@@ -1,6 +1,13 @@
 import TaskList from "../components/TaskList";
+import { useState } from "react";
+import AddTask from "../components/AddTask";
 
 function Dashboard() {
+
+  const [isVisible, setIsVisible] = useState(false)
+
+
+
   return (
     <>
       <section className="KanbanBoard">
@@ -13,13 +20,18 @@ function Dashboard() {
           </div>
           <div className="dragDropContainer">
           <div className="kColumns">
-          <TaskList/>
-          <button> Discover new celestial body </button>
+
+            <TaskList/>
           </div>
           <div className="kColumns"></div>
           <div className="kColumns"></div>
           </div>
         </div>
+
+        <button onClick={() => {setIsVisible(!isVisible)}}>
+            {isVisible ? 'Exploration Course Set!' : 'Explore New Celestial Body!'}
+            </button>
+            { isVisible && (<AddTask/>) }
       </section>
     </>
   );

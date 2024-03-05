@@ -12,7 +12,6 @@ function Sidebar() {
         /> }>
       <Link to="/"> Home </Link>
       <Link to="/about"> About </Link>
-      <Link to="/gallery"> Space Images Gallery </Link>
     </Menu>
     </>
   )
