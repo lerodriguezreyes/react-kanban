@@ -85,8 +85,10 @@ ul {
 
 .bm-menu {
   background: #000000;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  padding: 1.5em 1.5em 0;
+  font-family: "farsan";
+  font-size: 1.75em;
+  box-shadow: 0 15px 15px grey;
 }
 
 .bm-item {
@@ -138,7 +140,7 @@ height: 100%;
 
 .kColumns{
   background-color: grey;
-  height: 400px;
+  height: 600px;
   width: 100%;
   margin: 5px;
   margin-top: 0;
@@ -209,27 +211,23 @@ left: 32%;
 /*  Task form styling */
 
 .AddTask {
-  border: 1px solid grey;
-  box-shadow: 0px 2px 3px grey;
-  width: 400px;
+  width: 99%;
   text-align: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.AddTask {
-  background: #fffee7;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px grey;
+  font-family: "Anta", cursive;
+  font-size: 15pt;
+  margin: 5px;
+  margin-bottom: 0;
 }
 
 .AddTask label {
-  width: 100px;
+  width: 15%;
   display: block;
   margin: 0 auto;
 }
 
 .AddTask input,textarea,select {
-  padding: 10px;
   display: inline-block;
-  margin: 2px 0 10px;
+  margin: 0 auto;
 }
