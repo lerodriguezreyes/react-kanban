@@ -2,7 +2,6 @@ import KanbanTaskData from "../assets/KanbanData.json";
 import { useState } from "react";
 import ReducedTaskCard from "./ReducedTaskCard";
 import AddTask from "./AddTask";
-
 function TaskList() {
   
   const [tasks, setTasks] = useState(KanbanTaskData);
@@ -23,7 +22,7 @@ function TaskList() {
   return (
     <div>
       {tasks.map((task,index) => {
-        return <ReducedTaskCard key={task.id} task={task} index={index} deleteTask = {deleteTask}/>;
+        return <ReducedTaskCard key={task.id} task={task} index={index} deleteTask = {deleteTask} />;
       })}
 
       <AddTask addNewTask = {addNewTask} />

@@ -1,9 +1,10 @@
 import { milisecondComparison } from "../services/DateUtilities";
+import { Link } from "react-router-dom";
 
 function ReducedTaskCard({ task, deleteTask }) {
   return (
     <div key={task.id} className="ReducedTaskCard">
-      <h4 id="cardHeader">Task: {task.title}</h4>
+      <h4 id="cardHeader"><Link to={`/tasklist/${task.id}`}>{task.title}</Link></h4>
       <p id="cardDueDate"> Due Date: {task.dueDate}</p>
       {milisecondComparison(task.dueDate) ? (
         <p className="cardStatus">
@@ -23,7 +24,6 @@ function ReducedTaskCard({ task, deleteTask }) {
           {" "}
           Blast it!{" "}
         </button>
-        <button> Delve within! </button>
       </div>
     </div>
   );
