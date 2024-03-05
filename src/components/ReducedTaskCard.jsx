@@ -3,26 +3,28 @@ import { milisecondComparison } from "../services/DateUtilities";
 function ReducedTaskCard({ task, deleteTask }) {
   return (
     <div key={task.id} className="ReducedTaskCard">
-      <h4>Task: {task.title}</h4>
-      <p> Due Date: {task.dueDate}</p>
+      <h4 id="cardHeader">Task: {task.title}</h4>
+      <p id="cardDueDate"> Due Date: {task.dueDate}</p>
       {milisecondComparison(task.dueDate) ? (
-        <p>
+        <p className="cardStatus">
           {" "}
           <strong>Status: </strong> On Time<span>✔️</span>{" "}
         </p>
       ) : (
-        <p>
+        <p className="cardStatus">
           {" "}
-          <strong>Status: </strong><span>⏰</span>Prioritize task!<span>⏰</span>
+          <strong>Status: </strong>
+          <span>⏰</span>Prioritize task!<span>⏰</span>
         </p>
       )}
-
-      <button onClick={() => deleteTask(task.id)} className="deletebutton">
+      <div id="cardButtonDiv">
         {" "}
-        Blast it!{" "}
-      </button>
-
-      <button> Delve within! </button>
+        <button onClick={() => deleteTask(task.id)} className="deletebutton">
+          {" "}
+          Blast it!{" "}
+        </button>
+        <button> Delve within! </button>
+      </div>
     </div>
   );
 }
