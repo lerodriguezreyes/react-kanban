@@ -12,37 +12,30 @@ const [dueDate, setDueDate] = useState("");
 
 const handleTitleInput = (e) => {
     setTitle(e.target.value);
-    {console.log("Updating title", title)}
 }
 
 const handleDescriptionInput = (e) => {
     setDescription(e.target.value);
-    {console.log("Updating description", description)}
 }
 
 const handleAssigneeInput = (e) => {
     setAssignee(e.target.value);
-    {console.log("Updating assignee", assignee)}
 }
 
 const handleStatusInput = (e) => {
     setStatus(e.target.value);
-    {console.log("Updating statuss", status)}
 }
 
 const handlePriorityInput = (e) => {
     setPriority(e.target.value);
-    {console.log("Updating priority", priority)}
 }
 
 const handleCreatedDateInput = (e) => {
     setCreatedDate(e.target.value);
-    {console.log("Updating created date", createdDate)}
 }
 
 const handleDueDateInput = (e) => {
     setDueDate(e.target.value);
-    {console.log("Updating due date", dueDate)}
 }
 
 const handleSubmit = (e) => {
@@ -52,7 +45,6 @@ const newTask = {title, description, assignee, status, priority, createdDate, du
 
 addNewTask(newTask)
 
-console.log('Task added =====>>>>>>>>>', newTask)
 setTitle('')
 setDescription('')
 setAssignee('')
@@ -64,7 +56,7 @@ setDueDate('')
 
     return (
     <div className="AddTask">
-        <h4>AddTask</h4>
+        <h4>Discover new blimp</h4>
 
         <form onSubmit={handleSubmit}>
             <label>Task title: </label>
@@ -127,11 +119,8 @@ setDueDate('')
                 onChange={handleDueDateInput}
             />
             <br></br>
-            {console.log("after rendering",
-            title,description,assignee, createdDate,
-             status, priority, dueDate)}
             
-            <button type="submit">Add task</button>                                                                        
+            <button type="submit">Add Blimp </button>                                                                        
         </form>
 
     </div>

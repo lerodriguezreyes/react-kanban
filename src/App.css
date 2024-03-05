@@ -202,12 +202,12 @@ left: 32%;
 }
 
 /* Lost page styling */
-#lostHeader, #lostMessege{
+.lostHeader, .lostMessege{
   text-align: center;
   font-family: 'anta';
 }
 
-#lostPic{
+.lostPic{
   width: 100%;
 }
 
