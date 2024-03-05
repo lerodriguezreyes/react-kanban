@@ -5,8 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-import SpaceGallery from "./pages/SpaceGallery";
-import TaskDetails from "./pages/TaskDetails";
+import TaskListPage from "./pages/TaskListPage";
+import KanbanTaskData from "./assets/KanbanData.json"
 
 function App() {
 
@@ -15,9 +15,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/tasklist" element={<TaskListPage tasks={KanbanTaskData}/>} />
         <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<SpaceGallery />} />
-        {/* <Route path="/:taskId" element={<TaskDetails />} /> */}
         <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer />
