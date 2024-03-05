@@ -22,7 +22,7 @@ function ReducedTaskCard({ task, deleteTask }) {
         Blast it!{" "}
       </button>
 
-      <button> Explore it! </button>
+      <button> Delve within! </button>
     </div>
   );
 }
