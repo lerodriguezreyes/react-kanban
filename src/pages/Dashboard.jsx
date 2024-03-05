@@ -21,7 +21,7 @@ function Dashboard() {
           <div className="dragDropContainer">
           <div className="kColumns">
 
-            {/* <TaskList/> */}
+            <TaskList/>
           </div>
           <div className="kColumns"></div>
           <div className="kColumns"></div>
@@ -32,8 +32,6 @@ function Dashboard() {
             {isVisible ? 'Exploration Course Set!' : 'Explore New Celestial Body!'}
             </button>
             { isVisible && (<AddTask/>) }
-
-            
       </section>
     </>
   );
