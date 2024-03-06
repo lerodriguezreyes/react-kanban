@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { TaskContext } from "../context/tasks.context";
 
 function TaskList() {
-  const {tasks, deleteTask, addNewTask} = useContext(TaskContext)
+  const {tasks, setTask, deleteTask, addNewTask} = useContext(TaskContext)
 
   return (
     <div>
