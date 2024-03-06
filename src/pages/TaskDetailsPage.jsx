@@ -1,26 +1,29 @@
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link } from "react-router-dom";
 import AreYouLost from "../components/AreYouLost";
-import TaskCard from "../components/TaskCard";
-import { useContext } from "react";
-import { TaskContext } from "../context/tasks.context";
+import FullTaskCard from "../components/FullTaskCard";
 
-function TaskDetailsPage({tasks}) {
-    const { taskId } = useParams();
-    console.log("Task Id ===>", taskId);
+function TaskDetailsPage({ tasks }) {
   
-    const found = tasks.find((task) => 
-      task.id === taskId);
+  const { taskId } = useParams();
+  
+  console.log("Task Id ===>", taskId);
 
-    console.log(found)
-  
-    return (
-        <div>
-        <h1> Celestial Body details </h1>
-        {!found && <AreYouLost />}
-        {found && <TaskCard  task={task} />}
-        <Link to="/"> Back to MissionBoard</Link>
+  const task = tasks.find((task) => task.id === taskId);
+
+  console.log(task);
+
+  return (
+    <div>
+      <h1> Celestial Body details </h1>
+      {!task && <AreYouLost />}
+      {task && ( <FullTaskCard  task={task} />)}
+      <div className="buttonContainer">
+      <Link to={`/edit/${task.id}`}> <button> Edit Celestial Body details </button> </Link>
+      <Link to="/"> <button> Back to MissionBoard </button> </Link>
       </div>
-  )
+      
+    </div>
+  );
 }
 
-export default TaskDetailsPage
+export default TaskDetailsPage;
