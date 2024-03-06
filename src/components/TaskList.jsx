@@ -1,23 +1,9 @@
-import KanbanTaskData from "../assets/KanbanData.json";
-import { useState } from "react";
 import ReducedTaskCard from "./ReducedTaskCard";
-import AddTask from "./AddTask";
+import { useContext } from "react";
+import { TaskContext } from "../context/tasks.context";
+
 function TaskList() {
-  
-  const [tasks, setTasks] = useState(KanbanTaskData);
-  
-  const addNewTask = (newTask) => {
-    let newTasks = [newTask, ...tasks]
-    setTasks(newTasks)
-  }
-
-  const deleteTask = (taskId) => {
-    const filteredTasks = tasks.filter((task) => {
-      return task.id !== taskId;
-    });
-
-    setTasks(filteredTasks);
-  };
+  const {tasks, deleteTask, addNewTask} = useContext(TaskContext)
 
   return (
     <div>
@@ -25,7 +11,7 @@ function TaskList() {
         return <ReducedTaskCard key={task.id} task={task} index={index} deleteTask = {deleteTask} />;
       })}
 
-      <AddTask addNewTask = {addNewTask} />
+    
 
     </div>
   );
