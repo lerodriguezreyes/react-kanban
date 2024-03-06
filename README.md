@@ -16,8 +16,8 @@ The React application should have the following features:
 * Item Details Page - A page showing the details of the selected item from the list of items.
 * About Page - A page showing the project description and information about the team members (students) working on the project, including links to their GitHub and LinkedIn profiles. ✔️
 * Not Found Page - A page shown whenever the user navigates to a URL route that doesn’t exist in the app. ✔️
-* Create Item Form - A form that allows the user to create a new item and add it to the items list.
-* Update Item Form - A form that allows the user to update an existing item on the list.
+* Create Item Form - A form that allows the user to create a new item and add it to the items list. ✔️
+* Update Item Form - A form that allows the user to update an existing item on the list. ⏰
 * Keep your code clean and organized by using descriptive variable names, correct indentation, removing any unused code, and maintaining proper file structure and naming.
 * Extra: Display a toast with feedback whenever a task is successfully created, updated, or deleted.
 * Extra: The user should be able to easily move tasks between columns by dragging and dropping them.
@@ -43,7 +43,7 @@ The React application should have the following features:
 
 ### Iteration 2 tasks  ✔️
 1. Render your JSON data as a list. ✔️
-2. Conditionally render content in the list items.
+2. Conditionally render content in the list items. ✔️
     -  Condition to conditionally render content on each item in the list.✔️
     - If objects in JSON dataset don’t contain any boolean property, have  a conditional check that results in true or false. ✔️
 3. Include a delete button on each list item that allows the user to delete the item from the list. ✔️
@@ -54,14 +54,14 @@ The React application should have the following features:
 1. Install and set up react-router in your React app. ✔️
 2. Create the following page components and the routes to render them in the app:
     - Dashboard Page - A page that the user sees first when they open the app. It should show the items list that you created previously. ✔️
-    - Item Details Page - A page that displays all the details of an item selected from the items list. 
+    - Item Details Page - A page that displays all the details of an item selected from the items list. ⏰
     - About Page - A page showing the project description and information about the team members (students) working on the project, including links to your GitHub and LinkedIn profiles. ✔️
     - Not Found Page - A page that renders whenever a user navigates to a URL route that doesn’t exist in the app. ✔️
 3. The Navbar, Footer, and Sidebar components should be displayed on all the pages. ✔️
 
 ### Iteration 4 tasks
-1. Create a form component that allows the user to create and add a new item to the items list. The form component should be displayed on the Dashboard page.
-2. Create a form component that allows the user to update an existing item from the items list.
+1. Create a form component that allows the user to create and add a new item to the items list. The form component should be displayed on the Dashboard page. ✔️
+2. Create a form component that allows the user to update an existing item from the items list. ⏰
 
 ### Iteration 5 tasks:
 1. Finish implementing any remaining features in your app.
@@ -76,19 +76,14 @@ The React application should have the following features:
 
 ### Pending tasks
 - FIGURE OUT ITEMS DETAILS PAGE and its url parameter browsing.
-- Add buttons functionality to dashboard.
 - create update form and add functionality to item details page.
 - integrate drag and drop functionality.
 - integrate toasts display whenever a task is successfully created, updated, or deleted.
-- style the reduced cards into celestial bodies.
-- style the different pages.
 
 ### Ideas that I would like to implement
-1. Side Bar style: https://reactjsexample.com/react-burger-menu-an-off-canvas-sidebar-react-component-with-a-collection-of-effects/
-2. Kanban board stlye: https://static.kanbantool.com/home/kanban-software.png taken from https://kanbantool.com/
-5. Space images polaroid like carousel gallery :https://codepen.io/t_afif/pen/PoedrGY
+1. Space images polaroid like carousel gallery :https://codepen.io/t_afif/pen/PoedrGY
     * Maybe on click zoom for each picture? 
-6. Fonts for different aspects:
+2. Fonts for different aspects:
     * H1 font - https://fonts.google.com/specimen/Anta
     * slogan font - https://fonts.google.com/specimen/Kalam?classification=Handwriting
     * H2, H3 font - https://fonts.google.com/specimen/Roboto
