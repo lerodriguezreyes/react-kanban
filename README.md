@@ -30,6 +30,7 @@ The React application should have the following features:
 * All quotes were taken from https://www.brainyquote.com and https://spacequotations.com/quotes-about-space/
 * Error page image taken from: https://www.irishtimes.com/resizer/R1ncS8w_lc193kscBzlcYsjdEcU=/1600x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/5W5SBE4OVBYZSUTJDYQ2HYWIDA.jpg
 * Astronaut recruiting image taken from: https://img.freepik.com/premium-vector/astronaut-recruiting-poster_77221-136.jpg 
+* Black hole image taken from: https://aeon.co/essays/how-black-hole-thought-experiments-help-explain-the-universe
 
 ### Iteration 1 tasks  ✔️
 1. Set up a GitHub repository for the project. ✔️
