@@ -167,6 +167,11 @@ margin-bottom: 5px;
   margin-bottom: 5px;
 }
 
+#tasklistHeader{
+  font-family: "farsan";
+  text-align: center;
+}
+
 /* Footer styling */
 #footer {
   font-family: "Farsan", cursive;

@@ -30,6 +30,7 @@ The React application should have the following features:
 * All quotes were taken from https://www.brainyquote.com and https://spacequotations.com/quotes-about-space/
 * Error page image taken from: https://www.irishtimes.com/resizer/R1ncS8w_lc193kscBzlcYsjdEcU=/1600x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/5W5SBE4OVBYZSUTJDYQ2HYWIDA.jpg
 * Astronaut recruiting image taken from: https://img.freepik.com/premium-vector/astronaut-recruiting-poster_77221-136.jpg 
+* Black hole image taken from: https://aeon.co/essays/how-black-hole-thought-experiments-help-explain-the-universe
 
 ### Iteration 1 tasks  ✔️
 1. Set up a GitHub repository for the project. ✔️
@@ -43,7 +44,7 @@ The React application should have the following features:
 
 ### Iteration 2 tasks  ✔️
 1. Render your JSON data as a list. ✔️
-2. Conditionally render content in the list items.
+2. Conditionally render content in the list items. ✔️
     -  Condition to conditionally render content on each item in the list.✔️
     - If objects in JSON dataset don’t contain any boolean property, have  a conditional check that results in true or false. ✔️
 3. Include a delete button on each list item that allows the user to delete the item from the list. ✔️
@@ -76,7 +77,6 @@ The React application should have the following features:
 
 ### Pending tasks
 - FIGURE OUT ITEMS DETAILS PAGE and its url parameter browsing.
-- Add buttons functionality to dashboard.
 - create update form and add functionality to item details page.
 - integrate drag and drop functionality.
 - integrate toasts display whenever a task is successfully created, updated, or deleted.
