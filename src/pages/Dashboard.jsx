@@ -1,9 +1,11 @@
 import TaskList from "../components/TaskList";
 import { useState } from "react";
 import AddTask from "../components/AddTask";
+import { useContext } from "react";
+import { TaskContext } from "../context/tasks.context";
 
 function Dashboard() {
-
+  const {tasks, deleteTask, addNewTask} = useContext(TaskContext)
   const [isVisible, setIsVisible] = useState(false)
 
 
@@ -31,7 +33,7 @@ function Dashboard() {
         <button onClick={() => {setIsVisible(!isVisible)}}>
             {isVisible ? 'Exploration Course Set!' : 'Explore New Celestial Body!'}
             </button>
-            { isVisible && (<AddTask/>) }
+            { isVisible && (  <AddTask addNewTask = {addNewTask} />) }
       </section>
     </>
   );
