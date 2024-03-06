@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom"
 import AreYouLost from "../components/AreYouLost";
 import TaskCard from "../components/TaskCard";
+import { useContext } from "react";
+import { TaskContext } from "../context/tasks.context";
 
 function TaskDetailsPage({tasks}) {
     const { taskId } = useParams();
@@ -15,7 +17,7 @@ function TaskDetailsPage({tasks}) {
         <div>
         <h1> Celestial Body details </h1>
         {!found && <AreYouLost />}
-        {found && <TaskCard/>}
+        {found && <TaskCard  task={task} />}
         <Link to="/"> Back to MissionBoard</Link>
       </div>
   )
