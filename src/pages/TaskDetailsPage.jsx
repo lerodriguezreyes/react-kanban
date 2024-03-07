@@ -13,15 +13,14 @@ function TaskDetailsPage() {
   const task = tasks.find((task) => task.id === taskId);
 
   return (
-    <div>
-      <h1> Celestial Body details </h1>
+    <div className="TaskDetailsPage">
+      <h1 className='tasklistHeader'> Celestial Body details </h1>
       {!task && <AreYouLost />}
       {task && ( <FullTaskCard  task={task} />)}
       <div className="buttonContainer">
-      <Link to={`/edit/${task.id}`}> <button> Edit Celestial Body details </button> </Link>
       <Link to="/"> <button> Back to MissionBoard </button> </Link>
+      <Link to={`/edit/${task.id}`}> <button> Edit Celestial Body details </button> </Link>
       </div>
-      
     </div>
   );
 }

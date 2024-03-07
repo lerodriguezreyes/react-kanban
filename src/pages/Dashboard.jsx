@@ -13,15 +13,13 @@ function Dashboard() {
     <>
       <section className="KanbanBoard">
         <div className="kContainer">
-        <h1>Mission Board</h1>
+        <h1 id="title">Mission Board</h1>
           <div className="kHeaders">
             <h3>A new blimp in the radar!</h3>
             <h3>Currently exploring</h3>
             <h3>Fully scanned</h3>
           </div>
-          <div className="dragDropContainer" 
-          // onDrop={(e) => handleDrop(e, e.target)} onDragOver={(e)=> handleOnDragOver(e)}
-          >
+          <div className="dragDropContainer"> 
             <div className="kColumns">
               <TaskList status={'To Do'}/>
             </div>
@@ -32,12 +30,13 @@ function Dashboard() {
               <TaskList status={'Done'}/>
             </div>      
           </div>
-        </div>
-
-        <button onClick={() => {setIsVisible(!isVisible)}}>
+          <div id="buttonContainer"> 
+          <button onClick={() => {setIsVisible(!isVisible)}}>
             {isVisible ? 'Exploration Course Set!' : 'Explore New Celestial Body!'}
             </button>
             { isVisible && (  <AddTask addNewTask = {addNewTask} />) }
+          </div>
+        </div>
       </section>
     </>
   );
