@@ -12,6 +12,20 @@ ul {
   list-style-type: none;
 }
 
+button {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 0 15px grey;
+  font-family: "farsan";
+  font-size: large;
+  border-color: #000000;
+}
+
+#buttonContainer{
+  text-align: center;
+  width: 100%;
+}
+
 .anta-regular {
   font-family: "Anta", sans-serif;
   font-weight: 400;
@@ -97,6 +111,7 @@ ul {
 }
 
 /* Kanban Board styling */
+
 .KanbanBoard{
   background-image: url(https://github.com/lerodriguezreyes/react-kanban/blob/main/images/kanbanback.jpg?raw=true);
   background-size: cover;
@@ -133,7 +148,7 @@ height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 15px grey;
   font-family: "Anta", cursive;
-  font-size: 15pt;
+  font-size: 18pt;
   margin: 5px;
   margin-bottom: 0;
 }
@@ -157,6 +172,8 @@ height: 100%;
 .TaskCard {
 box-shadow: 0 0 15px grey;
 background-color: rgba(255, 255, 255, 0.2);
+font-family: "Anta", cursive;
+font-size: 15pt;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -167,14 +184,29 @@ border-width: 2px;
 margin-bottom: 5px;
 }
 
+.TaskCardDetail{
+  box-shadow: 0 0 15px grey;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Anta", cursive;
+  font-size: 15pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
 .cardItem{
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-#tasklistHeader{
-  font-family: "farsan";
-  text-align: center;
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Footer styling */
@@ -206,9 +238,14 @@ font-family: 'Anta';
   font-size: large;
 }
 
+#aboutButton{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
 #flowNaut{
 position: relative;
-left: 32%;
+left: 33%;
 }
 
 /* Lost page styling */
@@ -225,10 +262,8 @@ left: 32%;
 /*  Task form styling */
 
 .AddTask {
-  width: 99%;
+  width: 100%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 15px grey;
   font-family: "Anta", cursive;
   font-size: 15pt;
   margin: 5px;
@@ -236,12 +271,49 @@ left: 32%;
 }
 
 .AddTask label {
+  box-shadow: 0 0 15px grey;
+  background-color: rgba(255, 255, 255, 0.2);
   width: 15%;
   display: block;
   margin: 0 auto;
 }
 
+.EditTaskHeader{
+  width: 99%;
+  text-align: center;
+  font-family: "Anta", cursive;
+  font-size: 20pt;
+  padding-top: 15px;
+  box-shadow: 0 0 15px grey;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin:0}
+
+.AddTaskHeader, .tasklistHeader{
+  width: 99%;
+  text-align: center;
+  font-family: "Anta", cursive;
+  font-size: 20pt;
+  margin: 5px;
+  box-shadow: 0 0 15px grey;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+
 .AddTask input,textarea,select {
   display: inline-block;
   margin: 0 auto;
+  box-shadow: 0 0 15px grey;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.editTaskPage{
+  background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/240131164124-cms3-webb-spiral-galaxy-012924.jpg?q=w_3000,c_fill);
+  background-size: cover;
+}
+
+.TaskDetailsPage{
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-image: url(https://greekreporter.com/wp-content/uploads/2023/09/james-webb-space-telescope-discovered-a-new-galaxy-jwster1-with-its-striking-circular-form-and-enigmatic-einstein-ring-credit-nasas-marshall-space-flight-center-flickr-ccbync2.jpg);
+  background-size: cover;
 }

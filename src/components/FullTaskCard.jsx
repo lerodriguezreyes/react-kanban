@@ -1,7 +1,7 @@
 import { milisecondComparison } from "../services/DateUtilities";
 function FullTaskCard({ task }) {
   return (
-    <div className="TaskCard">
+    <div className="TaskCardDetail">
       <h3>Task: {task.title}</h3>
       <p className="cardItem"> Description: {task.description}</p>
       <p className="cardItem"> Assignee: {task.assignee}</p>

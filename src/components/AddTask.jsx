@@ -59,7 +59,7 @@ setDueDate('')
 
     return (
     <div className="AddTask">
-        <h4>Discover new blimp</h4>
+        <p className="AddTaskHeader">Discover new blimp</p>
 
         <form onSubmit={handleSubmit}>
             <label>Task title: </label>
@@ -121,9 +121,11 @@ setDueDate('')
                 value={dueDate}
                 onChange={handleDueDateInput}
             />
-            <br></br>
-            
-            <button type="submit">Add Blimp </button>                                                                        
+            <br/>
+            <br/>
+            <button type="submit">Add Blimp </button>
+            <br/>
+            <br/>                                                                        
         </form>
 
     </div>
