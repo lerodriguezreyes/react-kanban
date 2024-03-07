@@ -5,9 +5,8 @@ import { useContext } from "react";
 import { TaskContext } from "../context/tasks.context";
 
 function Dashboard() {
-  const {tasks, deleteTask, addNewTask} = useContext(TaskContext)
+  const {addNewTask} = useContext(TaskContext)
   const [isVisible, setIsVisible] = useState(false)
-
 
 
   return (
@@ -20,13 +19,18 @@ function Dashboard() {
             <h3>Currently exploring</h3>
             <h3>Fully scanned</h3>
           </div>
-          <div className="dragDropContainer">
-          <div className="kColumns">
-
-            <TaskList/>
-          </div>
-          <div className="kColumns"></div>
-          <div className="kColumns"></div>
+          <div className="dragDropContainer" 
+          // onDrop={(e) => handleDrop(e, e.target)} onDragOver={(e)=> handleOnDragOver(e)}
+          >
+            <div className="kColumns">
+              <TaskList status={'To Do'}/>
+            </div>
+            <div className="kColumns">
+              <TaskList status={'In Progress'}/>
+            </div>
+            <div className="kColumns">
+              <TaskList status={'Done'}/>
+            </div>      
           </div>
         </div>
 

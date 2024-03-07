@@ -10,7 +10,7 @@ function Sidebar() {
           src="https://github.com/lerodriguezreyes/react-kanban/blob/main/public/logo.png?raw=true"
           alt="rocketship zooming in space"
         /> }>
-      <Link to="/"> Home </Link>
+      <Link to="/"> Mission Board </Link>
       <Link to="/about"> About </Link>
     </Menu>
     </>
