@@ -1,5 +1,4 @@
 export function currentDate() {
-   console.log( 'Current Date invoked') 
    const date = new Date();
     const dd = date.getDate();
     const mm = date.getMonth()+1;
@@ -10,7 +9,6 @@ export function currentDate() {
     }
 
 export function milisecondComparison(taskDate){
-      console.log( 'Milisecond comparison invoked')
       const myDate = new Date()
       const miliDate = myDate.getTime()
       const testDate = new Date(taskDate)

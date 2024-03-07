@@ -55,38 +55,27 @@ The React application should have the following features:
 1. Install and set up react-router in your React app. ✔️
 2. Create the following page components and the routes to render them in the app:
     - Dashboard Page - A page that the user sees first when they open the app. It should show the items list that you created previously. ✔️
-    - Item Details Page - A page that displays all the details of an item selected from the items list. ⏰
+    - Item Details Page - A page that displays all the details of an item selected from the items list. ✔️
     - About Page - A page showing the project description and information about the team members (students) working on the project, including links to your GitHub and LinkedIn profiles. ✔️
     - Not Found Page - A page that renders whenever a user navigates to a URL route that doesn’t exist in the app. ✔️
 3. The Navbar, Footer, and Sidebar components should be displayed on all the pages. ✔️
 
 ### Iteration 4 tasks
 1. Create a form component that allows the user to create and add a new item to the items list. The form component should be displayed on the Dashboard page. ✔️
-2. Create a form component that allows the user to update an existing item from the items list. ⏰
+2. Create a form component that allows the user to update an existing item from the items list. ✔️
 
 ### Iteration 5 tasks:
-1. Finish implementing any remaining features in your app.
-2. To make sure that everything is working properly, open the React app and verify that all the pages are accessible and that all the features are working properly. Additionally, check the browser’s 3/ 3. Dev Console and make sure there are no lingering console logs or unresolved errors.
+1. Finish implementing any remaining features in your app. ✔️
+2. To make sure that everything is working properly, open the React app and verify that all the pages are accessible and that all the features are working properly. Additionally, check the browser’s 3/ 3. Dev Console and make sure there are no lingering console logs or unresolved errors. ✔️
 4. Prep slides for presentation.
 
 ### Iteration 6 tasks:
-1. Finish implementing any remaining features in your app.
-2. Finish fleshing out individual page content.
+1. Finish implementing any remaining features in your app. ✔️
+2. Finish fleshing out individual page content. ✔️
 3. Finish styling changes in App.
 
 
 ### Pending tasks
-- FIGURE OUT ITEMS DETAILS PAGE and its url parameter browsing.
-- create update form and add functionality to item details page.
-- integrate drag and drop functionality.
-- integrate toasts display whenever a task is successfully created, updated, or deleted.
-
-### Ideas that I would like to implement
-1. Space images polaroid like carousel gallery :https://codepen.io/t_afif/pen/PoedrGY
-    * Maybe on click zoom for each picture? 
-2. Fonts for different aspects:
-    * H1 font - https://fonts.google.com/specimen/Anta
-    * slogan font - https://fonts.google.com/specimen/Kalam?classification=Handwriting
-    * H2, H3 font - https://fonts.google.com/specimen/Roboto
-    * Card font - https://fonts.google.com/specimen/Swanky+and+Moo+Moo?classification=Handwriting
-    *  Quote font - https://fonts.google.com/specimen/Farsan?classification=Handwriting
+1 - check all links are visible
+2 - style buttons
+3 - check for last minute touch ups

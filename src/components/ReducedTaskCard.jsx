@@ -1,9 +1,10 @@
 import { milisecondComparison } from "../services/DateUtilities";
 import { Link } from "react-router-dom";
 
-function ReducedTaskCard({ task, deleteTask }) {
+function ReducedTaskCard({ task, deleteTask, handleDragStart }) {
+
   return (
-    <div key={task.id} className="TaskCard">
+    <div key={task.id} className="TaskCard" draggable onDragStart={(e) => handleDragStart(e, task.id)}>
       <h4 className="cardItem">
         <Link to={`/taskdetails/${task.id}`}>{task.title}</Link>
       </h4>

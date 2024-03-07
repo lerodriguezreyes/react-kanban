@@ -7,14 +7,12 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import KanbanTaskData from "./assets/KanbanData.json"
 import TaskDetailsPage from "./pages/TaskDetailsPage";
-import { DragDropContext } from "react-beautiful-dnd";
 import EditPage from "./pages/EditPage";
 
 function App() {
 
   return (
     <>
-    <DragDropContext>
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
@@ -24,7 +22,6 @@ function App() {
         <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer />
-      </DragDropContext>
     </>
   );
 }
